@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /v1/
+Disallow: /v2/
+Disallow: /venuepage/
+Disallow: subscribers.php
+Disallow: subscribe.php
