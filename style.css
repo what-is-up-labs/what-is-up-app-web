@@ -303,6 +303,27 @@ aside{
 	float: right;
 	width: 267px;
 	padding-top: 100px;
+	position:relative;
+}
+
+#play-button {
+	position: absolute;
+	left: 72px;
+	top: 270px;
+	width: 120px;
+	height: 120px;
+}
+
+#play-button a {
+	display: block;
+	background: url('images/btn-play.png') no-repeat;
+	background-size: cover;
+	width: 120px;
+	height: 120px;
+}
+#play-button a:hover {
+	background: url('images/btn-play-hover.png') no-repeat;
+	background-size: cover;
 }
 
 #main {

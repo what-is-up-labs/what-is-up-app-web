@@ -17,6 +17,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700|Open+Sans:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="prettyPhoto.css">
 
 	<script src="js/libs/modernizr-2.0.min.js"></script>
 	<script src="js/libs/respond.min.js"></script>
@@ -49,6 +50,9 @@
 <div class="wrapper">
 	<aside>
 			<div class="iphone-preview">
+				<div id="play-button">
+					<a href="http://www.youtube.com/watch?v=wREDtRSv-T0" rel="prettyPhoto">&nbsp;</a>
+				</div>
 				<img src="images/whatisup-iphone-preview.png" alt="What Is Up augmented reality view" />
 			</div>
 	</aside>
@@ -101,6 +105,46 @@ regarding the What Is Up app.</p>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script src="js/jquery.prettyPhoto.js"></script>
+
+<script>
+	$('a[rel="prettyPhoto"]').prettyPhoto({
+		social_tools:'',
+		markup:'<div class="pp_pic_holder"> \
+						<div class="ppt">&nbsp;</div> \
+						<div class="pp_top"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+						<div class="pp_content_container"> \
+							<div class="pp_left"> \
+							<div class="pp_right"> \
+								<div class="pp_content"> \
+									<div class="pp_loaderIcon"></div> \
+									<div class="pp_fade"> \
+										<a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+										<div class="pp_hoverContainer"> \
+											<a class="pp_next" href="#">next</a> \
+											<a class="pp_previous" href="#">previous</a> \
+										</div> \
+										<div id="pp_full_res"></div> \
+										<div class="pp_details"> \
+										</div> \
+									</div> \
+								</div> \
+							</div> \
+							</div> \
+						</div> \
+						<div class="pp_bottom"> \
+							<div class="pp_left"></div> \
+							<div class="pp_middle"></div> \
+							<div class="pp_right"></div> \
+						</div> \
+					</div> \
+					<div class="pp_overlay"></div>'
+	});
+</script>
 
 <script src="js/script.js"></script>
 <script>
